@@ -75,8 +75,9 @@ namespace Microsoft.Diagnostics.EventFlow.Outputs
                     {
                         return CompletedTask;
                     }
-
+                    
                     RIExtendedMessageProperty.AttachToRequest(TraceTag, "Provider", evt.ProviderName);
+                    RIExtendedMessageProperty.AttachToRequest(TraceTag, "Level", evt.Level.ToString());                                        
 
                     evt.Payload.TryGetValue("Message", out object message);
                     _reflectInsight.SendJSON((message as string) ?? evt.ProviderName, evt);
