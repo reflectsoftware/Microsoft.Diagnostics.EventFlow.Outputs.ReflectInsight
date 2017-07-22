@@ -109,8 +109,8 @@
   <ItemGroup>
     <Compile Include="Configuration\ReflectInsightOutputConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReflectInsightInsightsOutput.cs" />
-    <Compile Include="ReflectInsightInsightsOutputFactory.cs" />
+    <Compile Include="ReflectInsightOutput.cs" />
+    <Compile Include="ReflectInsightOutputFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

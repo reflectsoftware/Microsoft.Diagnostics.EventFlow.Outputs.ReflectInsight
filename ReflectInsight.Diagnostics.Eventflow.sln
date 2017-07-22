@@ -5,12 +5,16 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Diagnostics.EventFlow.Outputs.ReflectInsight", "src\EventFlow.Outputs.ReflectInsight\Microsoft.Diagnostics.EventFlow.Outputs.ReflectInsight.csproj", "{EED9E5F6-9B7B-429E-BE34-88BDE98DCE9D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{D7181C62-2CAA-4269-B46C-AADB88C49C82}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. SolutionItems", "00. SolutionItems", "{D7181C62-2CAA-4269-B46C-AADB88C49C82}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outputs", "Outputs", "{15080F95-E2B0-4ADA-A3E4-E44E09B423EB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Outputs", "01. Outputs", "{15080F95-E2B0-4ADA-A3E4-E44E09B423EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Harness", "02. Harness", "{BD668898-8B94-4423-95F6-1A52C59B01D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHarness", "src\TestHarness\TestHarness.csproj", "{3C868AD3-69F0-4D89-B164-1EE1352AF60D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,11 +26,16 @@ Global
 		{EED9E5F6-9B7B-429E-BE34-88BDE98DCE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EED9E5F6-9B7B-429E-BE34-88BDE98DCE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EED9E5F6-9B7B-429E-BE34-88BDE98DCE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C868AD3-69F0-4D89-B164-1EE1352AF60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C868AD3-69F0-4D89-B164-1EE1352AF60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C868AD3-69F0-4D89-B164-1EE1352AF60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C868AD3-69F0-4D89-B164-1EE1352AF60D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EED9E5F6-9B7B-429E-BE34-88BDE98DCE9D} = {15080F95-E2B0-4ADA-A3E4-E44E09B423EB}
+		{3C868AD3-69F0-4D89-B164-1EE1352AF60D} = {BD668898-8B94-4423-95F6-1A52C59B01D0}
 	EndGlobalSection
 EndGlobal

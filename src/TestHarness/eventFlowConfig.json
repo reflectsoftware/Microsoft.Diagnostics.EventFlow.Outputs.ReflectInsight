@@ -1,0 +1,21 @@
+﻿{
+  "inputs": [
+    {
+      "type": "Trace",
+      "traceLevel": "All"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "ReflectInsight",
+      "instanceName":  "MyInstance"
+    }
+  ],
+  "extensions": [
+    {
+      "category": "outputFactory",
+      "type": "ReflectInsight",
+      "qualifiedTypeName": "Microsoft.Diagnostics.EventFlow.Outputs.ReflectInsightOutputFactory, Microsoft.Diagnostics.EventFlow.Outputs.ReflectInsight, Culture=neutral, PublicKeyToken=4a3c404446dbbccd"
+    }
+  ]
+}

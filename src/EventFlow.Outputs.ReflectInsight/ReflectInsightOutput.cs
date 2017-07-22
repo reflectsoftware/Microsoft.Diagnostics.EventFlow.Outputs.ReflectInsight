@@ -75,12 +75,13 @@ namespace Microsoft.Diagnostics.EventFlow.Outputs
                     {
                         return CompletedTask;
                     }
-                    
+
+                    var level = evt.Level.ToString();
                     RIExtendedMessageProperty.AttachToRequest(TraceTag, "Provider", evt.ProviderName);
-                    RIExtendedMessageProperty.AttachToRequest(TraceTag, "Level", evt.Level.ToString());                                        
+                    RIExtendedMessageProperty.AttachToRequest(TraceTag, "Level", level);
 
                     evt.Payload.TryGetValue("Message", out object message);
-                    _reflectInsight.SendJSON((message as string) ?? evt.ProviderName, evt);
+                    _reflectInsight.SendJSON($"[{level}] {(message as string) ?? evt.ProviderName}", evt);
                 }
 
                 _healthReporter.ReportHealthy();
