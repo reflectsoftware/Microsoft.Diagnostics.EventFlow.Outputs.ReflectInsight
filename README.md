@@ -1,4 +1,4 @@
-# Microsoft.Diagnostics.EventFlow
+# Microsoft.Diagnostics.EventFlow for ReflectInsight
 
 
 
